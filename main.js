@@ -12,7 +12,7 @@ game = {
         this.resetGuessesRemaining();
         this.currentWrd = new Word.Word(this.wordBank[Math.floor(Math.random()* this.wordBank.length)]);
         this.currentWrd.getLets();
-        console.log("Welcome to Pokemon Hangman!\nGuess from the Original 151 Pokemon.");
+        console.log("Welcome to contractual terms hangman!\nGuess an exciting word");
         console.log(this.currentWrd.wordRender() + '\n');
         this.keepPromptingUser();
     },
@@ -41,8 +41,8 @@ game = {
                         console.log('Already guessed that letter');
                     }
                     if (self.currentWrd.didWeFindTheWord()) {
-                        console.log('You Won! The Pokemon was ' + self.currentWrd.word);
-                            console.log('WAY TO GOOOOO!!!!!');
+                        console.log('win, the term is ' + self.currentWrd.word);
+                            
                         return;
                     }
                 }
@@ -53,8 +53,8 @@ game = {
             if ((self.guessesRemaining > 0) && (self.currentWrd.found === false)){
                 self.keepPromptingUser();
             } else if(self.guessesRemaining === 0){
-                    console.log('You lost! The Pokemon was', self.currentWrd.word);
-                    console.log('Gotta catch um all!');
+                    console.log('You lost! Word was', self.currentWrd.word);
+                    
               } else{
                     console.log(self.currentWrd.wordRender());
               }
