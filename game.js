@@ -1,5 +1,6 @@
-// Word Bank using some exciting contract terms
-
-exports.wordBank = ["Acceptance", "agent", "arbitration", "comfort letters", "consideration", "express terms", "injunction",
-				    "incorporate", "jurisdiction", "liability", "offer", "partnership", "proxy", "quorom", "ratification", 
-				    "repudiation", "void", "bankruptcy", "guarantee", "indemnity"]
+//list of words to guess.
+exports.newWord = {
+  wordList:["ACCEPTANCE", "AGENT", "COLLECTIVE AGREEMENT", "CONDITIONS", "CONSIDERATION", "DUE DILIGENCE", "GOING CONCERN", "INCORPORATE",
+  "JURISDICTION", "LIABILITY", "OFFER", "PROXY", "QUOROM"],
+  hangman: ["\n\n\n\n\n\n\n-------------", "\n |\n |\n |\n |\n |\n |\n |\n-------------", "____________\n |         |\n |\n |\n |\n |\n |\n-------------","____________\n |         |\n |         O\n |\n |\n |\n |\n |\n-------------","____________\n |         |\n |         O\n |         |\n |         |\n |\n |\n |\n-------------","____________\n |         |\n |         O\n |         |\n |         |\n |        ---\n |\n |\n-------------", "____________\n |         |\n |         O\n |       __|\n |         |\n |        ---\n |\n |\n-------------", "____________\n |         |\n |         O\n |       __|__\n |         |\n |        ---\n |\n |\n-------------", "____________\n |         |\n |         O\n |       __|__\n |         |\n |        ---\n |        |\n |\n-------------","____________\n |         |\n |         O\n |       __|__\n |         |\n |        ---\n |        | |\n |\n-------------"]
+};
